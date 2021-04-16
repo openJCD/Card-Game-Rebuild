@@ -30,17 +30,17 @@ namespace Card_Game_Rebuild
             if (currentFrame == totalFrames)
                 currentFrame = 0;
         }
-        public void Draw(SpriteBatch spriteBatch, Vector2 location, Game1.ScreenScaler scaler)
+        public void Draw(SpriteBatch spriteBatch, Vector2 location)
         {
-            int width = (int)(Texture.Width * scaler.objectScale / Columns);
-            int height = (int)(Texture.Height * scaler.objectScale / Rows);
+            int width = Texture.Width / Columns;
+            int height = Texture.Height / Rows;
             int row = (int)((float)currentFrame / (float)Columns);
             int column = currentFrame % Columns;
 
             Rectangle sourceRectangle = new Rectangle(width * column, height * row, width, height);
-            Rectangle destinationRectangle = new Rectangle((int)((int)location.X * scaler.objectScale), (int)((int)location.Y * scaler.objectScale), (int)(width * scaler.objectScale), (int)(height * scaler.objectScale));
+            Rectangle destinationRectangle = new Rectangle((int)location.X, (int)location.Y, width, height);
 
-            spriteBatch.Draw(Texture, location, sourceRectangle, Color.White, 0f, new Vector2(destinationRectangle.X+destinationRectangle.Width/2, destinationRectangle.Y + destinationRectangle.Height / 2), scaler.objectScale, SpriteEffects.None, 0f);          
+            spriteBatch.Draw(Texture, destinationRectangle, sourceRectangle, Color.White);          
         }
         public void forceFrame(int frame)
         {

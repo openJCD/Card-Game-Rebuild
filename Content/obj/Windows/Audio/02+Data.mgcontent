@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/User/source/repos/Card Game Rebuild/Content/Audio/02+Data.mp3</SourceFile>
+  <SourceTime>2021-01-30T10:10:02.2591387+00:00</SourceTime>
+  <DestFile>C:/Users/User/source/repos/Card Game Rebuild/Content/bin/Windows/Audio/02+Data.xnb</DestFile>
+  <DestTime>2021-04-11T09:25:23.8310197+01:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2020-08-10T16:17:54+01:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Users/User/source/repos/Card Game Rebuild/Content/bin/Windows/Audio/02+Data.wma</string>
+  </BuildOutput>
+</PipelineBuildEvent>

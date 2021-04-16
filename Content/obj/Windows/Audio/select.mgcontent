@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/User/source/repos/Card Game Rebuild/Content/Audio/select.wav</SourceFile>
+  <SourceTime>2021-04-02T18:23:34.3043527+01:00</SourceTime>
+  <DestFile>C:/Users/User/source/repos/Card Game Rebuild/Content/bin/Windows/Audio/select.xnb</DestFile>
+  <DestTime>2021-04-11T09:25:24.3666888+01:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2020-08-10T16:17:54+01:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
