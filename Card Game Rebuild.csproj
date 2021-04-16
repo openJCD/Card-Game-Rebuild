@@ -1,0 +1,95 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>JCD.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\Card Game Rebuild.AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.1\Card Game Rebuild.deps.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\Card Game Rebuild.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\Card Game Rebuild.runtimeconfig.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\Content\Audio\02+Data.wma" />
+    <Content Include="obj\Card Game Rebuild.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\netcoreapp3.1\Card Game Rebuild.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\Card Game Rebuild.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Card Game Rebuild.exe" />
+    <None Include="bin\Debug\netcoreapp3.1\Card Game Rebuild.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Audio\02+Data.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Audio\select.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Fonts\RedHatBold.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Fonts\RedHatRegular.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Images\ball.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Images\CardBG.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Images\card_brickwall.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Images\card_noimg.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Images\card_test2.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Images\card_test3.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Images\g1202.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Images\img_cursor.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Images\outline.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Images\rect.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Images\SmileyWalk.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Content\Images\ui_info.xnb" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.VisualBasic.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\MonoGame.Framework.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\debian-x64\native\libuv.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\fedora-x64\native\libuv.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\opensuse-x64\native\libuv.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\osx\native\libuv.dylib" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\rhel-x64\native\libuv.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win7-arm\native\libuv.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\libuv.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SharpDX.Direct2D1.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SharpDX.Direct3D11.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SharpDX.Direct3D9.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SharpDX.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SharpDX.DXGI.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SharpDX.Mathematics.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SharpDX.MediaFoundation.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SharpDX.XAudio2.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SharpDX.XInput.dll" />
+    <None Include="Card Game Rebuild.sln" />
+    <None Include="obj\Card Game Rebuild.csproj.nuget.g.props" />
+    <None Include="obj\Card Game Rebuild.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\netcoreapp3.1\apphost.exe" />
+    <None Include="obj\Debug\netcoreapp3.1\Card Game Rebuild.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Card Game Rebuild.assets.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Card Game Rebuild.csproj.CopyComplete" />
+    <None Include="obj\Debug\netcoreapp3.1\Card Game Rebuild.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Card Game Rebuild.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Card Game Rebuild.dll" />
+    <None Include="obj\Debug\netcoreapp3.1\Card Game Rebuild.genruntimeconfig.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Card Game Rebuild.pdb" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Card Game Rebuild\" />
+  </ItemGroup>
+</Project>
