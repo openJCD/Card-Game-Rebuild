@@ -19,7 +19,8 @@ namespace Card_Game_Rebuild
         public CardStat stats;
 
         public Rectangle rect;
-        public Vector2 origin;
+        private Vector2 origin;
+        private Vector2 fgorigin;
 
         // animation to be used on hover/click
         public Animation states;
@@ -36,13 +37,15 @@ namespace Card_Game_Rebuild
         }
         public void Update (MouseState mouse, MouseState oldState, MouseState newState)
         {
-
+            
         }
         public void Draw (SpriteBatch spriteBatch)
         {
-            Vector2 pos = new Vector2(rect.X, rect.Y);
-            origin = new Vector2(rect.X+rect.Width/2, rect.Y+rect.Height/2);
+            Vector2 pos = new Vector2(200, 200);
+            origin = new Vector2(/*rect.X+*/rect.Width/2, /*rect.Y*/+rect.Height/2);
             spriteBatch.Draw(background, pos, null, Color.White, 0f, origin, 1f, SpriteEffects.None, 0f);
+            fgorigin = new Vector2(foreground.Width/2, foreground.Height/2); 
+            spriteBatch.Draw(foreground, pos, null, Color.White, 0f, fgorigin, 1f, SpriteEffects.None, 0f);
         }
     }
 
