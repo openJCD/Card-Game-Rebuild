@@ -15,6 +15,9 @@ namespace Card_Game_Rebuild
 
         public Texture2D background { get; set; }
         public Texture2D foreground { get; set; }
+        public Texture2D statGraphic { get; set; }
+
+        private SpriteFont font;
 
         public CardStat stats;
 
@@ -25,7 +28,9 @@ namespace Card_Game_Rebuild
         // animation to be used on hover/click
         public Animation states;
 
-        // animation to be potentially used for the actual attacks/aactions in gameplay.
+        public CardStatus current_status;
+
+        // animation to be potentially used for the actual attacks/actions in gameplay.
         // public Animation action;
         public Card(ContentManager contentManager, Texture2D background, Texture2D foreground, CardStat stats, SpriteFont font,  Vector2 position = new Vector2())
         {
@@ -34,18 +39,41 @@ namespace Card_Game_Rebuild
             this.foreground = foreground;
             this.stats = stats;
             this.rect = new Rectangle(position.ToPoint(), new Point(background.Width, background.Height));
+            this.font = font;
+            this.current_status = CardStatus.Static;
         }
         public void Update (MouseState mouse, MouseState oldState, MouseState newState)
         {
-            
+            if (rect.Contains(mouse.Position))
+            {
+                this.current_status = CardStatus.Hover;
+                System.Diagnostics.Debug.WriteLine("mouse");
+            } 
+            else if (!rect.Contains(mouse.Position))
+            {
+                this.current_status = CardStatus.Static;
+            }
         }
-        public void Draw (SpriteBatch spriteBatch)
+        public void Draw(SpriteBatch spriteBatch, int windowWidth, int windowHeight, Texture2D statTexture)
         {
-            Vector2 pos = new Vector2(200, 200);
-            origin = new Vector2(/*rect.X+*/rect.Width/2, /*rect.Y*/+rect.Height/2);
+            //|--- Placeholder
+            Vector2 pos = new Vector2(rect.X+background.Width/2, rect.Y+background.Height/2);
+            //---|
+            //dynamic variable declarations
+            Vector2 textOrigin = font.MeasureString(this.stats.label) / 2;
+            origin = new Vector2(/*rect.X+*/rect.Width / 2, /*rect.Y*/+rect.Height / 2);
+            fgorigin = new Vector2(foreground.Width / 2, foreground.Height / 2.45f);
+            Rectangle statTexPos = new Rectangle(new Point(windowWidth - statTexture.Bounds.X, windowHeight - statTexture.Bounds.Y), new Point(statTexture.Width, statTexture.Height));
+
+            //draw calls
             spriteBatch.Draw(background, pos, null, Color.White, 0f, origin, 1f, SpriteEffects.None, 0f);
-            fgorigin = new Vector2(foreground.Width/2, foreground.Height/2); 
             spriteBatch.Draw(foreground, pos, null, Color.White, 0f, fgorigin, 1f, SpriteEffects.None, 0f);
+            spriteBatch.DrawString(font, this.stats.label, new Vector2(pos.X, pos.Y - (rect.Height / 2.45f)), Color.Black, 0f, textOrigin, 1f, SpriteEffects.None, 0f);
+            //situational draw calls
+            if (this.current_status == CardStatus.Hover)
+            {
+                spriteBatch.Draw(statTexture, statTexture.Bounds, Color.White);
+            }
         }
     }
 
@@ -65,7 +93,13 @@ namespace Card_Game_Rebuild
             this.type = type;
         }
     }
-
+    public enum CardStatus
+    {
+        Static,
+        Hover,
+        Clicked,
+        Dragging
+    }
 
     /// <summary>
     /// An interactive button.

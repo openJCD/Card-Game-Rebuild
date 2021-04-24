@@ -39,6 +39,8 @@ namespace Card_Game_Rebuild
         public Texture2D cardbg;
         public Texture2D cardfg;
         public Texture2D buttonbg;
+        public static Texture2D statGraphic { get; set; }
+        public Texture2D hitbox;
 
         // fonts
         public SpriteFont cardfont;
@@ -92,6 +94,8 @@ namespace Card_Game_Rebuild
             cardbg = _manager.Load<Texture2D>("Images/CardBG");
             cardfg = _manager.Load<Texture2D>("Images/card_noimg");
             buttonbg = _manager.Load<Texture2D>("Images/btn_play_bg");
+            statGraphic = _manager.Load<Texture2D>("Images/ui_info");
+            hitbox = _manager.Load<Texture2D>("Images/rect");
 
             cardfont = _manager.Load<SpriteFont>("Fonts/RedHatRegular");
 
@@ -101,7 +105,7 @@ namespace Card_Game_Rebuild
             // define misc stuff
             testCardStat = new CardStat("dummy", 10, 10, "none", "none");
             testCard = new Card(_manager, cardbg, cardfg, testCardStat, cardfont);
-
+            
         }
 
         protected override void Update(GameTime gameTime)
@@ -203,6 +207,7 @@ namespace Card_Game_Rebuild
             pubState = Mouse.GetState();
 
             testButton.Update(pubState, oldState, newState);
+            testCard.Update(pubState, oldState, newState);
 
             oldState = newState;
         }
@@ -215,7 +220,9 @@ namespace Card_Game_Rebuild
             //place drawing code for _spriteBatch here...
             //{
             testButton.Draw(_spriteBatch);
-            testCard.Draw(_spriteBatch);
+            testCard.Draw(_spriteBatch, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight, statGraphic);
+            _spriteBatch.Draw(hitbox, testCard.rect, Color.White);
+            //_spriteBatch.Draw(statGraphic, statGraphic.Bounds, Color.White);
             //}
             _spriteBatch.End();
         }
