@@ -20,21 +20,19 @@ namespace Card_Game_Rebuild
 
         public Rectangle rect;
         public Vector2 origin;
-        private Game1.ScreenScaler screenScaler;
 
         // animation to be used on hover/click
         public Animation states;
 
         // animation to be potentially used for the actual attacks/aactions in gameplay.
         // public Animation action;
-        public Card(ContentManager contentManager, Texture2D background, Texture2D foreground, CardStat stats, SpriteFont font, Game1.ScreenScaler scaler, Vector2 position = new Vector2())
+        public Card(ContentManager contentManager, Texture2D background, Texture2D foreground, CardStat stats, SpriteFont font,  Vector2 position = new Vector2())
         {
             this.contentManager = contentManager;
             this.background = background;
             this.foreground = foreground;
             this.stats = stats;
-            this.screenScaler = scaler;
-            rect = new Rectangle(position.ToPoint() * new Point((int)scaler.objectScale), new Point((int)(background.Width * scaler.objectScale), (int)(background.Height * scaler.objectScale)));
+            this.rect = new Rectangle(position.ToPoint(), new Point(background.Width, background.Height));
         }
         public void Update (MouseState mouse, MouseState oldState, MouseState newState)
         {
@@ -44,7 +42,7 @@ namespace Card_Game_Rebuild
         {
             Vector2 pos = new Vector2(rect.X, rect.Y);
             origin = new Vector2(rect.X+rect.Width/2, rect.Y+rect.Height/2);
-            spriteBatch.Draw(background, pos, null, Color.White, 0f, origin, 1f*screenScaler.objectScale, SpriteEffects.None, 0f);
+            spriteBatch.Draw(background, pos, null, Color.White, 0f, origin, 1f, SpriteEffects.None, 0f);
         }
     }
 
@@ -89,7 +87,6 @@ namespace Card_Game_Rebuild
         public Rectangle rectangle;
         private Vector2 position { get; set; }
         private Vector2 centre { get; set; }
-        private Game1.ScreenScaler screenScaler;
 
         public Vector2 originalOffset = new Vector2(0, 6);
         public Vector2 offset;
@@ -107,8 +104,8 @@ namespace Card_Game_Rebuild
         /// <param name="font"></param>
         /// <param name="backgroundRows"></param>
         /// <param name="backgroundColumns"></param>
-        /// <param name="label">Text to be displayed on front of button. Blank by default.</param>
-        public Button(Texture2D background, Vector2 position, ContentManager contentManager, buttonEventHandler buttonAction, SpriteFont font, Game1.ScreenScaler scaler, int backgroundRows = 1, int backgroundColumns = 2, string label = "")
+        /// <param name="label"></param>
+        public Button(Texture2D background, Vector2 position, ContentManager contentManager, buttonEventHandler buttonAction, SpriteFont font, int backgroundRows = 1, int backgroundColumns = 2, string label = "")
         {
             this.background = background;
             this.backgroundRows = backgroundRows;
@@ -118,14 +115,11 @@ namespace Card_Game_Rebuild
 
             this.contentManager = contentManager;
             this.states = new Animation(background, 1, 2);
-            //this.rectangle = new Rectangle((int)position.X, (int)position.Y, background.Width / backgroundColumns, background.Height / backgroundRows);
+            this.rectangle = new Rectangle((int)position.X, (int)position.Y, background.Width / backgroundColumns, background.Height / backgroundRows);
             this.centre = new Vector2(rectangle.X + rectangle.Width / 2, rectangle.Y + rectangle.Height / 2);
             this.font = font;
             this.label = label;
             this.offset = originalOffset;
-            this.screenScaler = scaler;
-            rectangle = new Rectangle(position.ToPoint() * new Point((int)scaler.objectScale), new Point((int)(background.Width * scaler.objectScale), (int)(background.Height * scaler.objectScale)));
-
         }
         public void Update(MouseState mouse, MouseState oldState, MouseState newState)
         {
@@ -161,7 +155,7 @@ namespace Card_Game_Rebuild
             Vector2 origin = font.MeasureString(label) / 2;
             Vector2 pos = new Vector2(rectangle.X, rectangle.Y);
             
-            states.Draw(spriteBatch, pos, this.screenScaler);
+            states.Draw(spriteBatch, pos);
             spriteBatch.DrawString(font, label, centre, Color.Black, 0f, origin + offset, 1f, SpriteEffects.None, 0f);
         }
 

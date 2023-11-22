@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Audio/02+Data.mp3</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Audio/select.wav</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Fonts/RedHatBold.spritefont</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Fonts/RedHatRegular.spritefont</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/ball.png</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/btn_play_bg.png</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/btn_play_icon.png</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/card_brickwall.png</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/card_noimg.png</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/card_test2.png</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/card_test3.png</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/CardBG.png</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/g1202.png</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/img_cursor.png</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/outline.png</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/rect.png</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/SmileyWalk.png</File>
+    <File>C:/Users/User/source/repos/Card Game Rebuild/Content/Images/ui_info.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

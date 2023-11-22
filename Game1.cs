@@ -71,7 +71,10 @@ namespace Card_Game_Rebuild
             //_graphics.ToggleFullScreen();
             //_graphics.ApplyChanges();
 
-            scaler = new ScreenScaler(new Vector2(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight));
+            _graphics.PreferredBackBufferWidth = 720;
+            _graphics.PreferredBackBufferHeight = 640;
+
+            scaler = new ScreenScaler(new Vector2(1366, 768));
 
             gameState = GameState.Debug;
             base.Initialize();
@@ -97,7 +100,7 @@ namespace Card_Game_Rebuild
 
             // define misc stuff
             testCardStat = new CardStat("dummy", 10, 10, "none", "none");
-            testCard = new Card(_manager, cardbg, cardfg, testCardStat, cardfont, scaler);
+            testCard = new Card(_manager, cardbg, cardfg, testCardStat, cardfont);
 
         }
 

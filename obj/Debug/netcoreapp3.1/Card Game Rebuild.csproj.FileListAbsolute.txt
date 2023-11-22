@@ -1,0 +1,55 @@
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Audio\02+Data.wma
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Audio\02+Data.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Audio\select.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Fonts\RedHatBold.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Fonts\RedHatRegular.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\ball.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\CardBG.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\card_brickwall.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\card_noimg.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\card_test2.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\card_test3.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\g1202.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\img_cursor.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\outline.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\rect.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\ui_info.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Card Game Rebuild.exe
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Card Game Rebuild.deps.json
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Card Game Rebuild.runtimeconfig.json
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Card Game Rebuild.runtimeconfig.dev.json
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Card Game Rebuild.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Card Game Rebuild.pdb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Microsoft.VisualBasic.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\MonoGame.Framework.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\SharpDX.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\SharpDX.Direct2D1.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\SharpDX.Direct3D11.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\SharpDX.Direct3D9.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\SharpDX.DXGI.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\SharpDX.Mathematics.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\SharpDX.MediaFoundation.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\SharpDX.XAudio2.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\SharpDX.XInput.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\runtimes\debian-x64\native\libuv.so
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\runtimes\fedora-x64\native\libuv.so
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\runtimes\opensuse-x64\native\libuv.so
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\runtimes\osx\native\libuv.dylib
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\runtimes\rhel-x64\native\libuv.so
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\runtimes\win7-arm\native\libuv.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\libuv.dll
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
+C:\Users\User\source\repos\Card Game Rebuild\obj\Debug\netcoreapp3.1\Card Game Rebuild.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Card Game Rebuild\obj\Debug\netcoreapp3.1\Card Game Rebuild.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Card Game Rebuild\obj\Debug\netcoreapp3.1\Card Game Rebuild.AssemblyInfo.cs
+C:\Users\User\source\repos\Card Game Rebuild\obj\Debug\netcoreapp3.1\Card Game Rebuild.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Card Game Rebuild\obj\Debug\netcoreapp3.1\Card Game Rebuild.csproj.CopyComplete
+C:\Users\User\source\repos\Card Game Rebuild\obj\Debug\netcoreapp3.1\Card Game Rebuild.dll
+C:\Users\User\source\repos\Card Game Rebuild\obj\Debug\netcoreapp3.1\Card Game Rebuild.pdb
+C:\Users\User\source\repos\Card Game Rebuild\obj\Debug\netcoreapp3.1\Card Game Rebuild.genruntimeconfig.cache
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\SmileyWalk.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\btn_play_bg.xnb
+C:\Users\User\source\repos\Card Game Rebuild\bin\Debug\netcoreapp3.1\Content\Images\btn_play_icon.xnb
